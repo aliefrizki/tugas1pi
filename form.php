@@ -4,58 +4,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Form Input Nama</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style type="text/css">
+  </style>
 </head>
 <body>
 
 
 <div class="container">
+  <h1 style="font-family: fantasy; color: white; border-bottom: 5px solid white">Welcome To DarthSide</h1>
   <div class="col-8">
-  <h1>Form Pendaftarn Sekte aqua</h1>
-  <form>
+  <form action="inputdatabase.php" method="POST">
     <div class="form-group">
-      <label for="Nama">Nama</label>
-      <input type="text" class="form-control" id="Nama" placeholder="Enter name">
+      <label for="nama" class="subjudul">Name</label>
+      <input type="text" class="form-control" name="nama" id="Nama" placeholder="Enter name"  required>
     </div>
 
     <div class="form-group">
-      <label for="username">username</label>
-      <input type="text" class="form-control" id="username" placeholder="username">
+      <label for="username" class="subjudul">Username</label>
+      <input type="text" class="form-control" name="username" id="username" placeholder="Pick Your Username" required>
     </div>
 
     <div class="form-group">
-      <label for="username">Suku</label>
-      <input type="text" class="form-control" id="Suku" placeholder="Suku">
+      <label for="suku" class="subjudul">Race</label>
+      <input type="text" class="form-control" name="suku" id="Suku" placeholder="Tell Us Your Race" required>
     </div>
 
     <div class="form-group">
-      <label for="username">Agama</label>
-      <select class="custom-select">
-        <option selected>Pilih agama</option>
-        <option value="islam">Islam</option>
-        <option value="kristen">Kristen</option>
-        <option value="kristen">Katolik</option>
-        <option value="budha">budha</option>
-        <option value="hindu">hindu</option>
-        <option value="konghucu">konghucu</option>
-        <option value="army">Army</option>
+      <label for="agama" class="subjudul">Religion</label>
+      <select name="agama" class="custom-select" required>
+        <option name="agama">-- Choose --</option>
+        <option value="islam" name="agama">Islam</option>
+        <option value="kristen" name="agama">Protestan</option>
+        <option value="kristen" name="agama">Katolik</option>
+        <option value="budha" name="agama">Buddha</option>
+        <option value="hindu" name="agama">Hindu</option>
+        <option value="konghucu" name="agama">Kong Hu Cu</option>
+        <option value="army" name="agama">Army New Religion</option>
     </select>
     </div>
 
     <div class="form-group">
-      <label for="username">jenis kelamin</label>
-      <select class="custom-select">
-        <option selected>Pilih jenis kelamin</option>
-        <option value="lakilaki">Laki-laki</option>
-        <option value="perempuan">perempuan</option>
-        <option value="nonbinary">non binary</option>   
+      <label for="jeniskelamin" class="subjudul">Gender</label>
+      <select style="" name="Kelamin" value=""  class="custom-select" required>
+          <option name="JK" value="Pilih">-- Choose --</option>
+          <option name="JK" value="Laki-laki">Male</option>
+          <option name="JK" value="Perempuan">Female</option>
+          <option name="JK" value="Lain-Lain">Non-Binary</option>   
     </select>
     </div>
 
 
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="button button1" >Submit</button>
   </form>
   </div>
 </div>
